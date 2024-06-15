@@ -6,7 +6,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Basic Frames.js example",
     other: {
-      ...(await fetchMetadata(new URL("/frames", appURL()))),
+      ...(await fetchMetadata(new URL("/examples/basic/frames", appURL()))),
     },
   };
 }
